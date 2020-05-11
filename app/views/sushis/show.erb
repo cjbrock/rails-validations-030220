@@ -9,3 +9,5 @@
 </div>
 
 <h4 class="red-text"> Name: <%= @sushi.name %>  </h4>
+<h6><%= link_to("Edit Sushi", edit_sushi_path(@sushi)) %></h6>
+<h6><%= link_to("Delete", @sushi, method: :delete, data:{confirm: "Do you really want to delete me?"}) %></h6>
